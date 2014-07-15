@@ -1,8 +1,9 @@
-var holyNumber = prompt('What number did you count to?');
-if(holyNumber > 3) {
-  alert('Four shalt thou not count. Five is right out.');
-} else if(holyNumber < 3) {
-  alert('Count neither one nor two, excepting that thou then proceedest to three.');
-} else {
-  alert('Throw the holy hand grenade!');
+var colors = ['red', 'green', 'blue'];
+
+for(var i = 0; i < colors.length; i++) {
+  console.log(colors[i] + " is one of my favorite colors");
 }
+
+colors.forEach(function(color, index) {
+  console.log(colors + " is favorite color number " + index);
+});
